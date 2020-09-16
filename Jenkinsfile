@@ -1,9 +1,9 @@
 pipeline {
-    agent { docker { image 'node:6.3' } }
+    agent { }
     stages {
         stage('build') {
             steps {
-                sh 'npm --version'
+                sh 'echo "hello from jenkins"'
             }
         }
     }
